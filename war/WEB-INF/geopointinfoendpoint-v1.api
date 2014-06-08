@@ -1,0 +1,208 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://myapp.appspot.com/_ah/api",
+  "name" : "geopointinfoendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://myapp.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "dogar.com",
+  "ownerName" : "dogar.com",
+  "packagePath" : "geodesic",
+  "methods" : {
+    "geopointinfoendpoint.insertGeoPointInfo" : {
+      "path" : "geopointinfo",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com" ],
+      "clientIds" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com", "274430009138-2ifc8231uodm74cjip81urb4c56antig.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.dogar.geodesic.GeoPointInfoEndpoint.insertGeoPointInfo",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "geopointinfoendpoint.listGeoPointInfo" : {
+      "path" : "geopointinfo",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com" ],
+      "clientIds" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com", "274430009138-2ifc8231uodm74cjip81urb4c56antig.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.dogar.geodesic.GeoPointInfoEndpoint.listGeoPointInfo",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "geopointinfoendpoint.removeGeoPointInfo" : {
+      "path" : "geopointinfo/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com" ],
+      "clientIds" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com", "274430009138-2ifc8231uodm74cjip81urb4c56antig.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.dogar.geodesic.GeoPointInfoEndpoint.removeGeoPointInfo",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "geopointinfoendpoint.updateGeoPointInfo" : {
+      "path" : "geopointinfo",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com" ],
+      "clientIds" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com", "274430009138-2ifc8231uodm74cjip81urb4c56antig.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.dogar.geodesic.GeoPointInfoEndpoint.updateGeoPointInfo",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "geopointinfoendpoint.getGeoPointInfo" : {
+      "path" : "geopointinfo/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com" ],
+      "clientIds" : [ "274430009138-4f8ufdnqj56u9mrclvamdfdah9kujcs1.apps.googleusercontent.com", "274430009138-2ifc8231uodm74cjip81urb4c56antig.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.dogar.geodesic.GeoPointInfoEndpoint.getGeoPointInfo",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "GeoPointInfo" : {
+        "id" : "GeoPointInfo",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "latitude" : {
+            "type" : "number"
+          },
+          "longitude" : {
+            "type" : "number"
+          },
+          "timestamp" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "titleInfo" : {
+            "type" : "string"
+          },
+          "textInfo" : {
+            "type" : "string"
+          },
+          "deleted" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "CollectionResponse_GeoPointInfo" : {
+        "id" : "CollectionResponse_GeoPointInfo",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "GeoPointInfo"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.dogar.geodesic.GeoPointInfoEndpoint.insertGeoPointInfo" : {
+        "request" : {
+          "$ref" : "GeoPointInfo"
+        },
+        "response" : {
+          "$ref" : "GeoPointInfo"
+        }
+      },
+      "com.dogar.geodesic.GeoPointInfoEndpoint.listGeoPointInfo" : {
+        "response" : {
+          "$ref" : "CollectionResponse_GeoPointInfo"
+        }
+      },
+      "com.dogar.geodesic.GeoPointInfoEndpoint.removeGeoPointInfo" : {
+      },
+      "com.dogar.geodesic.GeoPointInfoEndpoint.updateGeoPointInfo" : {
+        "request" : {
+          "$ref" : "GeoPointInfo"
+        },
+        "response" : {
+          "$ref" : "GeoPointInfo"
+        }
+      },
+      "com.dogar.geodesic.GeoPointInfoEndpoint.getGeoPointInfo" : {
+        "response" : {
+          "$ref" : "GeoPointInfo"
+        }
+      }
+    }
+  }
+}
