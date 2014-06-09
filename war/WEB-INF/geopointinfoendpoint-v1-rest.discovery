@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"0NZZm4UuLZgEQBhMTwnFS1XIMrM/oNpcOxSfkyRit4ut6CirSjIr4EM\"",
+ "etag": "\"0NZZm4UuLZgEQBhMTwnFS1XIMrM/n8UYleW4jOtitwLgPJSDJdFWyhc\"",
  "discoveryVersion": "v1",
  "id": "geopointinfoendpoint:v1",
  "name": "geopointinfoendpoint",
@@ -14,9 +14,9 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rest",
- "baseUrl": "https://myapp.appspot.com/_ah/api/geopointinfoendpoint/v1/",
+ "baseUrl": "https://proven-electron-526.appspot.com/_ah/api/geopointinfoendpoint/v1/",
  "basePath": "/_ah/api/geopointinfoendpoint/v1/",
- "rootUrl": "https://myapp.appspot.com/_ah/api/",
+ "rootUrl": "https://proven-electron-526.appspot.com/_ah/api/",
  "servicePath": "geopointinfoendpoint/v1/",
  "batchPath": "batch",
  "parameters": {

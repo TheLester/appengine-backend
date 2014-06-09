@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"0NZZm4UuLZgEQBhMTwnFS1XIMrM/oNpcOxSfkyRit4ut6CirSjIr4EM\"",
+ "etag": "\"0NZZm4UuLZgEQBhMTwnFS1XIMrM/n8UYleW4jOtitwLgPJSDJdFWyhc\"",
  "discoveryVersion": "v1",
  "id": "geopointinfoendpoint:v1",
  "name": "geopointinfoendpoint",
@@ -14,8 +14,8 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rpc",
- "rootUrl": "https://myapp.appspot.com/_ah/api/",
- "rpcUrl": "https://myapp.appspot.com/_ah/api/rpc",
+ "rootUrl": "https://proven-electron-526.appspot.com/_ah/api/",
+ "rpcUrl": "https://proven-electron-526.appspot.com/_ah/api/rpc",
  "rpcPath": "/_ah/api/rpc",
  "parameters": {
   "alt": {
